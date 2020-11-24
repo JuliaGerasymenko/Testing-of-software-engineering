@@ -135,7 +135,7 @@ namespace Lab2Tests
             Assert.True(multiple_flag_obj.GetFlag());
         }
         [Fact]
-        public void Test_CheckDisposeMethod_False()
+        public void Test_CheckDisposeMethod_Error()
         {
             IIG.BinaryFlag.MultipleBinaryFlag multiple_flag_obj = new IIG.BinaryFlag.MultipleBinaryFlag(2, true);
             multiple_flag_obj.Dispose();
