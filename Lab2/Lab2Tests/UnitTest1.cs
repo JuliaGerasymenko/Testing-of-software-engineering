@@ -6,12 +6,15 @@ namespace Lab2Tests
     public class UnitTest1
     {
         [Fact]
-        public void Test_CreateMultipleFlag_Error()
+        public void Test_CreateMultipleFlagMin_Error()
         {
             try {
                 IIG.BinaryFlag.MultipleBinaryFlag multiple_flag_obj = new IIG.BinaryFlag.MultipleBinaryFlag(1, false);
             } catch {
                 Console.WriteLine("the number of flags is less then or equal 1");
+                // doesn't work for me
+                // Assert.Fail();
+                Assert.True(false);
             }
         }
         [Fact]
@@ -51,6 +54,9 @@ namespace Lab2Tests
                 IIG.BinaryFlag.MultipleBinaryFlag multiple_flag_obj = new IIG.BinaryFlag.MultipleBinaryFlag(18446744073709551615, false);
             } catch {
                 Console.WriteLine("out of range of the type ulong");
+                // doesn't work for me
+                // Assert.Fail();
+                Assert.True(false);
             }
         }
         [Fact]
@@ -60,6 +66,9 @@ namespace Lab2Tests
                 IIG.BinaryFlag.MultipleBinaryFlag multiple_flag_obj = new IIG.BinaryFlag.MultipleBinaryFlag(17179868700, false);
             } catch {
                 Console.WriteLine("initialization of the object led to error");
+                // doesn't work for me
+                // Assert.Fail();
+                Assert.True(false);
             }
 
         }
@@ -72,6 +81,9 @@ namespace Lab2Tests
         //         IIG.BinaryFlag.MultipleBinaryFlag multiple_flag_obj = new IIG.BinaryFlag.MultipleBinaryFlag(18446744073709551616, false);
         //     } catch {
         //         Console.WriteLine("out of range of the type ulong");
+                // doesn't work for me
+                // Assert.Fail();
+                // Assert.True(false);
         //     }
         // }
 
@@ -97,6 +109,9 @@ namespace Lab2Tests
                 multiple_flag_obj.SetFlag(2);
             } catch {
                 Console.WriteLine("Specified argument was out of the range of valid values");
+                // doesn't work for me
+                // Assert.Fail();
+                Assert.True(false);
             }
         }
         // error CS1503: Argument 1: cannot convert from 'int' to 'ulong'
@@ -120,7 +135,7 @@ namespace Lab2Tests
             Assert.True(multiple_flag_obj.GetFlag());
         }
         [Fact]
-        public void Test_CheckDisposeMethod_Error()
+        public void Test_CheckDisposeMethod_False()
         {
             IIG.BinaryFlag.MultipleBinaryFlag multiple_flag_obj = new IIG.BinaryFlag.MultipleBinaryFlag(2, true);
             multiple_flag_obj.Dispose();
@@ -148,6 +163,9 @@ namespace Lab2Tests
                 multiple_flag_obj.ResetFlag(18000);
             } catch {
                 Console.WriteLine("Specified argument was out of the range of valid values");
+                // doesn't work for me
+                // Assert.Fail();
+                Assert.True(false);
             }
         }
         //  [Fact]
@@ -168,6 +186,9 @@ namespace Lab2Tests
                 multiple_flag_obj.SetFlag(18000);
             } catch {
                 Console.WriteLine("Specified argument was out of the range of valid values");
+                // doesn't work for me
+                // Assert.Fail();
+                Assert.True(false);
             }
         }
         [Fact]
