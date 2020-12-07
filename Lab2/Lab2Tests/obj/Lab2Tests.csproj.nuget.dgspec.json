@@ -1,27 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/julia/1/2/3/Lab2/Lab2Tests/Lab2Tests.csproj": {}
+    "/home/julia/Testing-of-software-engineering/Lab2/Lab2Tests/Lab2Tests.csproj": {}
   },
   "projects": {
-    "/home/julia/1/2/3/Lab2/Lab2Tests/Lab2Tests.csproj": {
+    "/home/julia/Testing-of-software-engineering/Lab2/Lab2Tests/Lab2Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/julia/1/2/3/Lab2/Lab2Tests/Lab2Tests.csproj",
+        "projectUniqueName": "/home/julia/Testing-of-software-engineering/Lab2/Lab2Tests/Lab2Tests.csproj",
         "projectName": "Lab2Tests",
-        "projectPath": "/home/julia/1/2/3/Lab2/Lab2Tests/Lab2Tests.csproj",
+        "projectPath": "/home/julia/Testing-of-software-engineering/Lab2/Lab2Tests/Lab2Tests.csproj",
         "packagesPath": "/home/julia/.nuget/packages/",
-        "outputPath": "/home/julia/1/2/3/Lab2/Lab2Tests/obj/",
+        "outputPath": "/home/julia/Testing-of-software-engineering/Lab2/Lab2Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/julia/1/2/3/Lab2/nuget.config",
+          "/home/julia/Testing-of-software-engineering/Lab2/nuget.config",
           "/home/julia/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "/home/julia/1/2/3/Lab2/./References": {},
+          "/home/julia/Testing-of-software-engineering/Lab2/./References": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
